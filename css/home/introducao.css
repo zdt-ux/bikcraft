@@ -35,7 +35,6 @@
   margin-bottom: 20px;
 }
 
-
 @media (max-width: 800px) {
   .introducao-bg {
     background: var(--cor-11);
