@@ -34,7 +34,7 @@ function ativarPergunta(event) {
   const resposta = document.getElementById(controls);
 
   resposta.classList.toggle("ativa");
-  const ativa = resposta.classList.contains("ativa")
+  const ativa = resposta.classList.contains("ativa");
   pergunta.setAttribute("aria-expanded", ativa);
   console.log(resposta);
 }
@@ -44,4 +44,9 @@ function eventosPerguntas(pergunta) {
 }
 perguntas.forEach(eventosPerguntas);
 console.log(perguntas);
+
+// Animação //
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
 

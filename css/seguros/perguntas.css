@@ -17,7 +17,6 @@
 }
 
 .perguntas button {
-
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -51,11 +50,11 @@
   transform: rotate(180deg);
 }
 
-.perguntas dd {
+.js .perguntas dd {
   display: none;
 }
 
-.perguntas dd.ativa {
+.js .perguntas dd.ativa {
   display: block;
 }
 
