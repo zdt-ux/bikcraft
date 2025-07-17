@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seguros | Bikcraft</title>
   <meta name="description" content="Seguros">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,6 +38,7 @@
     </div>
 
     <div class="seguros container">
+
       <div class="seguros-item">
         <h3 class="font-1-xl cor-6">PRATA</h3>
         <span class="font-1-xl cor-0">R$199 <span class="font-1-xs cor-6">mensal</span></span>
@@ -46,7 +48,7 @@
           <li>Suporte 08h às 18h</li>
           <li>Cobertura estadual</li>
         </ul>
-        <a class="botao secundario" href="./orcamento.html">inscreva-se</a>
+        <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">inscreva-se</a>
       </div>
       <div class="seguros-item">
         <h3 class="font-1-xl cor-p1">OURO</h3>
@@ -59,7 +61,7 @@
           <li>Desconto em parceiros</li>
           <li>Acesso ao Clube Bikcraft</li>
         </ul>
-        <a class="botao" href="./orcamento.html">inscreva-se</a>
+        <a class="botao" href="./orcamento.html?tipo=seguro&produto=ouro">inscreva-se</a>
       </div>
     </div>
   </main>
@@ -106,32 +108,32 @@
     <h2 class="font-1-xxl">perguntas frequentes<span class="cor-p1">.</span></span></h2>
     <dl>
       <div>
-        <dt class="font-1-m-b">Qual forma de pagamento vocês aceitam?</dt>
-        <dd class="font-2-s cor-9">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta1" aria-expanded="true"> forma de pagamento vocês aceitam?</button></dt>
+        <dd id="pergunta1" class="font-2-s cor-9 ativa">Aceitamos cartões de crédito com as bandeiras: Visa, Mastercard, ELO e American Express. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Como posso entrar em contato?</dt>
-        <dd class="font-2-s cor-9">Entre em contato pelo e-mail contato@bikcraft.com, telefone (21) 9999-9999 ou através do nosso chat online em bikcraft.com.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
+        <dd id="pergunta2" class="font-2-s cor-9">Entre em contato pelo e-mail contato@bikcraft.com, telefone (21) 9999-9999 ou através do nosso chat online em bikcraft.com.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Vocês possuem algum desconto?</dt>
-        <dd class="font-2-s cor-9">Sim, oferecemos 5% de desconto para pagamentos à vista realizados via PIX ou boleto bancário em todos os nossos produtos.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+        <dd id="pergunta3" class="font-2-s cor-9">Sim, oferecemos 5% de desconto para pagamentos à vista realizados via PIX ou boleto bancário em todos os nossos produtos.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Qual a garantia que possuo?</dt>
-        <dd class="font-2-s cor-9">Oferecemos garantia de 5 anos para o quadro e de 1 ano para os componentes contra defeitos de fabricação.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
+        <dd id="pergunta4" class="font-2-s cor-9">Oferecemos garantia de 5 anos para o quadro e de 1 ano para os componentes contra defeitos de fabricação.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Posso parcelar no boleto?</dt>
-        <dd class="font-2-s cor-9">Não, o parcelamento no boleto não está disponível. O parcelamento pode ser feito apenas com cartões de crédito em até 12x.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
+        <dd id="pergunta5" class="font-2-s cor-9">Não, o parcelamento no boleto não está disponível. O parcelamento pode ser feito apenas com cartões de crédito em até 12x.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Quantas trocas posso fazer ao ano?</dt>
-        <dd class="font-2-s cor-9">Você pode solicitar a troca de um produto em até 7 dias corridos após o recebimento, seguindo nossa política de trocas.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+        <dd id="pergunta6" class="font-2-s cor-9">Você pode solicitar a troca de um produto em até 7 dias corridos após o recebimento, seguindo nossa política de trocas.</dd>
       </div>
       <div>
-        <dt class="font-1-m-b">Qual Bikcraft devo escolher para o meu tamanho?</dt>
-        <dd class="font-2-s cor-9">Consulte nossa tabela de medidas na página de cada produto ou fale com nossa equipe pelo chat para ajudarmos na escolha.</dd>
+        <dt><button class="font-1-m-b" aria-controls="pergunta7" aria-expanded="false">Qual Bikcraft devo escolher para o meu tamanho?</button></dt>
+        <dd id="pergunta7" class="font-2-s cor-9">Consulte nossa tabela de medidas na página de cada produto ou fale com nossa equipe pelo chat para ajudarmos na escolha.</dd>
       </div>
     </dl>
   </article>
@@ -172,4 +174,5 @@
       <p class="footer-copy font-2-m cor-6">zDT - Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
